@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding TypeScript</title>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key={API_KEY}"
+    async
+    defer
+    ></script> 
+    <!--구글 맵 api 가져오기-->
+    <script src="dist/app.js" defer></script>
+    <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+    <div id="map">
+        <p>Please enter an address!<p>
+    </div>
+    <!--타입스크립트로 조정하므로, 액션이나 방식 없이 form으로 작성-->
+    <form>
+        <!--submit 양식을 제출하면, input으로 입력한 정보를 전달 받아 좌표로 변환하여 지도 상에 렌더링하기 위함-->
+        <input type="text" id="address">
+        <button type="submit">SEARCH ADDRESS</button>
+    </form>
+</body>
+</html>
